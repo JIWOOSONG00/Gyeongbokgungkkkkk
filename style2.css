@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Noto+Serif+KR:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: -0.03em;
+    line-height: 150%; 
+}
+
+body{
+    
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.nav{
+    max-width: 1280px;
+    min-width: 800px;
+    height: 90px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navi{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    
+}
+
+.navi a{
+    text-decoration: none;
+    color: #999999;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.navi a:hover{
+    color: #424242;
+}
+
+.navi .in a{
+    color: #424242;
+}
+
+.navi a:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px #424242;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+
+.navi a:hover:after{
+    transform: scaleX(1);
+    transform-origin: 0% 50%;
+}
+
+#headerimg{
+    width: 100%;
+    height: 500px;
+    background-image: url(https://blog.kakaocdn.net/dn/t5sIV/btq5qV77Q8K/lj8FsxAWdJ0knwVlTzvcEk/img.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+#headerimg .background{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: linear-gradient(89.77deg, rgba(51, 51, 51, 0.4) 36.1%, rgba(0, 0, 0, 0) 61.76%);
+}
+
+
+
+.headertext{
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    font-family: 'Noto Serif KR', serif;
+    line-height: normal;
+    letter-spacing: normal;
+    z-index: 9;
+}
+
+.headertext p{
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+.headertext h2{
+    font-size: 44px;
+    font-weight: 600; 
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+.content1 img{
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 12px;
+}
+
+.content1{
+    text-align: center;
+}
+#see1{
+    max-width: 1200px;
+    min-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.content1 p{
+    width: 350px;
+    font-size: 16px;
+    color: #616161;
+    font-weight: 400;
+}
+
+.content1 h2{
+    font-family: 'Noto Serif KR', serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #424242;
+    margin-bottom: 8px;
+}
+
+/* 건축물 */
+#see2 h2{
+    font-size: 28px;
+    font-weight: 700;
+    font-family: 'Noto Serif KR', serif;
+    text-align: center;
+    color: #424242;
+    margin-bottom: 32px;
+}
+
+#see2 ul{
+    list-style: none;
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.see2_li li{
+    font-size: 18px;
+    color: #999999;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.see2_li .one{
+    color: #424242;
+    font-weight: 700;
+    
+}
+
+.see2_li li:hover{
+    color: #424242;
+    font-weight: 700;
+}
+.see2_li li:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px #424242;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+
+.see2_li li:hover:after{
+    transform: scaleX(1);
+    transform-origin: 0% 50%;
+}
+
+/* 경복궁의 건축물 */
+
+#see2{
+    margin-bottom: 80px;
+    width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+.see2content{
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    margin-bottom: 40px;
+    clear: both;
+}
+.seemore a{
+    text-decoration: none;
+    color: #424242;
+    padding: 8px 24px;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+}
+
+.seemore a:hover{
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 24px;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #424242;
+}
+
+.seemore{
+    text-align: center;
+}
+
+.on{
+    display: flex;
+    width: 100%;
+    height: 300px;
+}
+
+.tabbox{
+    display: none;
+}
+
+.tabbox.tabon{
+    display: block;
+}
+
+.see2contentbox{
+    flex-grow: 1;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    position: relative;
+
+    transition: flex-grow .3s ease-in-out;
+}
+
+.see2contentbox:hover{
+    flex-grow: 2;
+}
+.see2content .img1{
+    background-image: url(https://img.freepik.com/free-photo/gyeongbokgung-palace_74190-3223.jpg?w=1060&t=st=1670343464~exp=1670344064~hmac=047591d370b6a4c5a02c1bcc449a9e0b2d301311e46d77b654992443083da9ff);
+}
+.see2content .img2{
+    background-image: url(https://w.namu.la/s/8a4f7cdf2fa382c79fd1151d13cf226835a16d831cf0fd4d1272e74f8bcda8c3f2085ba06f3c615c967fc28518ed0e8ce3644bcb021c248aedf486d529628c22901586b557432fb393c3091167264f020e807697a3f82eee426b04ebb64f4480c7817c105849ea71acc0b40451b7896a);
+}
+
+.see2content .img3{
+    background-image: url(https://lh3.googleusercontent.com/p/AF1QipNijO3kmWbHYmIszmBWEmyAAYAaNblQN7R3auRR=s1360-w1360-h1020);
+}
+
+.see2content .img4{
+    background-image: url(https://t1.daumcdn.net/cfile/tistory/16067F434F4A20EA17);
+}
+
+.see2content .img5{
+    background-image: url(https://www.kogl.or.kr/upload_recommend/%ec%a7%80%ec%97%ad%eb%b3%84%ea%b4%80%ea%b4%91%ec%a7%80/%ec%84%9c%ec%9a%b8%ed%8a%b9%eb%b3%84%ec%8b%9c/%ec%a2%85%eb%a1%9c/thumb_%eb%8f%99%ec%8b%ad%ec%9e%90%ea%b0%81_002.jpg);
+}
+
+.layer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+
+.see2contentbox p{
+    color: #fff;
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Noto Serif KR', serif;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+
+.see2contentbox:hover .layer, .see2contentbox:hover p{
+    opacity: 1;
+}
+
+
+.see2content .img6{
+    background-image: url(https://t1.daumcdn.net/cfile/blog/2758804B57E213862F);
+}
+.see2content .img7{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/0/06/%EA%B2%BD%EB%B3%B5%EA%B6%81_%EA%B7%BC%EC%A0%95%EC%A0%84%28%E5%8B%A4%E6%94%BF%E6%AE%BF%29.jpg);
+}
+
+.see2content .img8{
+    background-image: url(https://w.namu.la/s/d7daec2c5177e19c06fce4fdc4df77a2b94ff7f51c88a1f4b28be81595ae31a9240e46225aec505bdf452ec4484f7ee1b1cd0d621ba6eeba28be48049e125e8562201b0ec45095c6150429fbb8a2aac769b8d9889444c97bd6292e1dc7e41184e0bcf60962f0c6257237900cfb761363);
+}
+
+.see2content .img9{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/56/%EA%B2%BD%EB%B3%B5%EA%B6%81_%EC%88%98%EC%A0%95%EC%A0%84_%EC%A0%84%EA%B2%BD.jpg);
+}
+
+.see2content .img10{
+    background-image: url(https://t1.daumcdn.net/cfile/tistory/1551F4444F7B5A7420);
+}
+
+
+.see2content .img11{
+    background-image: url(https://w.namu.la/s/8f92552c1842ba68533d9be3dbd1e0fd30acf4afd418d11ce911fbcacc727063fbb82df9949f0f23714e7167ace0e9704f5b1687a7c6d179b9cc47c3079ba6c354563664850dc83b7e58ebe8b96dfb73888b3f9fcb5ab912542a2bd37322f2f6);
+}
+.see2content .img12{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/0/01/Gyeongbokgung-KyoTaeJeon.JPG);
+}
+.see2content .img13{
+    background-image: url(https://mblogthumb-phinf.pstatic.net/MjAxNjEyMDZfMTMx/MDAxNDgwOTk1MTg5Mjk5.fnOIqAWuL86ITttIkjzr31GM8fEGJ8_EgcyDA8x5MOog.Jf7IT1wsz-UmXPaIlNuCUEaVVycBl8T_geVxPvf6GJsg.JPEG.hanmun2014/9%EC%9D%91%EC%A7%80%EB%8B%B9_%2814%29.jpg?type=w800);
+}
+.see2content .img14{
+    background-image: url(http://heritage.go.kr/gung/gogung1/images/ic-g39.jpg);
+}
+.see2content .img15{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Jagyeongjeon.JPG/1200px-Jagyeongjeon.JPG);
+}
+
+
+
+/* 영상 */
+#see3{
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+}
+
+#see3 h2{
+    font-size: 28px;
+    font-weight: 700;
+    font-family: 'Noto Serif KR', serif;
+    color: #424242;
+    margin-bottom: 20px;
+}
+
+#see3 p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #616161;
+    margin-bottom: 20px;
+}
+
+.youtube{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 푸터 */
+#footer{
+    width: 100%;
+    height: 170px;
+    background-color: #424242;
+    margin-top: auto;
+    display: flex;
+    
+    align-items: center;
+}
+.footer1{
+    display: flex;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin-right: 32px;
+}
+.footercontent{
+    display: flex;
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+
+.text1 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    
+}
+
+.text1{
+    margin-bottom: 20px;
+}
+
+.text1 a:nth-child(2){
+    margin-left: 20px;
+    
+}
+
+.sns a:not(:last-child){
+    margin-right: 20px;
+}
+
+.text2{
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+

@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Noto+Serif+KR:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: -0.03em;
+    line-height: 150%; 
+}
+
+body{
+    
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.nav{
+    max-width: 1280px;
+    min-width: 800px;
+    height: 90px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navi{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    
+}
+
+.navi a{
+    text-decoration: none;
+    color: #999999;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.navi a:hover{
+    color: #424242;
+}
+
+.navi .in a{
+    color: #424242;
+}
+
+.navi a:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px #424242;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+
+.navi a:hover:after{
+    transform: scaleX(1);
+    transform-origin: 0% 50%;
+}
+
+#headerimg{
+    width: 100%;
+    height: 500px;
+    background-image: url('images/headerimage2.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+    
+}
+
+
+.headertext{
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    font-family: 'Noto Serif KR', serif;
+    line-height: normal;
+    letter-spacing: normal;
+    
+}
+
+.headertext p{
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+.headertext h2{
+    font-size: 44px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: normal;
+}
+/* 궁성이란 */
+#con1 h2{
+    font-size: 28px;
+    font-weight: 700;
+    font-family: 'Noto Serif KR', serif;
+    text-align: center;
+    color: #424242;
+    margin-bottom: 20px;
+}
+
+#con1 p{
+    width: 900px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: #616161;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#con1{
+    margin-bottom: 80px;
+}
+
+/* 건물설명들 */
+
+#con2{
+    max-width: 1280px;
+    min-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#con2 img{
+    width: 510px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.con2box{
+    display: flex;
+    margin-bottom: 80px;
+}
+.con2boxtext{
+    margin-top: 20px;
+}
+.con2boxtext h2{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Noto Serif KR', serif;
+    color: #424242;
+    margin-bottom: 16px;
+}
+
+.con2boxtext p{
+    width: 620px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #616161;
+    margin-top: 16px;
+}
+
+.con2boxtext hr{
+    width: 50px;
+    border: 0;
+    height: 1px;
+    background-color: #424242;
+    
+}
+
+#con2 .left img{
+    margin-right: 40px;
+}
+
+.right img{
+    margin-left: 40px;
+}
+
+.right{
+    justify-content: flex-end;
+}
+
+.right .con2boxtext{
+    text-align: right;
+}
+.right .con2boxtext hr{
+   margin-left: auto;
+}
+
+/* 푸터 */
+#footer{
+    width: 100%;
+    height: 170px;
+    background-color: #424242;
+    margin-top: auto;
+    display: flex;
+    
+    align-items: center;
+}
+.footer1{
+    display: flex;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin-right: 32px;
+}
+.footercontent{
+    display: flex;
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+
+.text1 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    
+}
+
+.text1{
+    margin-bottom: 20px;
+}
+
+.text1 a:nth-child(2){
+    margin-left: 20px;
+    
+}
+
+.sns a:not(:last-child){
+    margin-right: 20px;
+}
+
+.text2{
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+
